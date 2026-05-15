@@ -119,7 +119,7 @@ if 'username' not in st.session_state:
 
 # --- Login Interface ---
 if not st.session_state['logged_in']:
-    st.markdown("<h2 style='text-align: center;'>🔓 Management & Analytics ERP Login</h2>", unsafe_view=True)
+   st.markdown("<h2 style='text-align: center;'>🔐 Management & Analytics ERP Login</h2>", unsafe_allow_html=True)
     with st.form("login_form", clear_on_submit=True):
         st.write("Bypass System active. Enter any username & password to enter.")
         u = st.text_input("Username").strip()
